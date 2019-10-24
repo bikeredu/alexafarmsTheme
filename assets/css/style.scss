@@ -1,0 +1,36 @@
+/**!
+Theme Name: Alexandra Farms
+Description: Template wordpress
+Version: 1
+Author: Arango Studio, Eduardo Tellez - +573174142727
+Author URI: http://nogacreativos.com/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: sass, gulp, boilerpate
+Text Domain: wpgulp-theme
+*/
+
+/* ----------------------------------------------------------------------------
+ * Mixins & Variables
+ * ------------------------------------------------------------------------- */
+@import "partials/mixins";
+@import "partials/variables";
+
+/* ----------------------------------------------------------------------------
+ * Normalize & Santize
+ * ------------------------------------------------------------------------- */
+@import "vendor/normalize";
+@import "vendor/sanitize";
+
+/* ----------------------------------------------------------------------------
+ * Structure
+ * ------------------------------------------------------------------------- */
+@import "partials/structure";
+
+/* WPCore */
+@import "partials/wpcore";
+
+/* Base */
+@import "partials/base";
+
+

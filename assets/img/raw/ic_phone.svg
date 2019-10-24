@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>DED115DB-7461-41A3-B796-DAF0481A1925</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 13.8378378 0 13.8378378 13.8378378 0 13.8378378"></polygon>
+    </defs>
+    <g id="10-Landing-formulario-leads" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-318.000000, -377.000000)">
+        <g id="Group-6-Copy" transform="translate(319.000000, 378.000000)">
+            <circle id="Oval-2" stroke="#FFFFFF" cx="16" cy="16" r="16"></circle>
+            <g id="Page-1" transform="translate(9.513514, 9.513514)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M10.054231,8.70235463 C9.69869072,8.57943005 9.29168684,8.67382907 9.05818895,8.91262037 L7.4719325,10.0407034 C5.64188543,9.073481 4.47821899,7.91510797 3.52246566,6.10535228 L4.88992812,4.68672026 C5.15930352,4.41763893 5.25634924,4.02416264 5.14018845,3.65685928 C4.79023569,2.59612012 4.61261261,1.70535802 4.61261261,1.00898144 C4.61261261,0.452585962 4.16002665,0 3.60363117,0 L1.00898144,0 C0.45288004,0 0,0.452585962 0,1.00898144 C0,7.96304267 5.87479516,13.8378378 12.8288564,13.8378378 C13.3852519,13.8378378 13.8378378,13.3852519 13.8378378,12.8288564 L13.8378378,10.2342067 C13.8378378,9.67781119 13.3852519,9.22522523 12.8288564,9.22522523 C11.9501515,9.22522523 10.7832502,8.94261632 10.054231,8.70235463 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

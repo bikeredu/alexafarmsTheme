@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="14px" viewBox="0 0 7 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>3C4AF90B-A4E4-425C-84E9-C959E14B5AEC</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 7 0 7 14 0 14"></polygon>
+    </defs>
+    <g id="01-Home_emi" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-421.000000, -500.000000)">
+        <g id="Page-1" transform="translate(421.000000, 500.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-2"></g>
+            <path d="M1.78689601,14 L1.78689601,7.43076727 L0,7.43076727 L0,5.06556779 L1.78689601,5.06556779 L1.78689601,3.04536504 C1.78689601,1.45784407 2.84243697,0 5.27455357,0 C6.25945378,0 6.98765756,0.0917693822 6.98765756,0.0917693822 L6.93027836,2.30048866 C6.93027836,2.30048866 6.1876313,2.29346875 5.37723214,2.29346875 C4.5001313,2.29346875 4.35963761,2.6863285 4.35963761,3.33854205 L4.35963761,5.06556779 L7,5.06556779 L6.88511029,7.43076727 L4.35963761,7.43076727 L4.35963761,14 L1.78689601,14 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>
