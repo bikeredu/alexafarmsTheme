@@ -6,71 +6,10 @@
  * @since 1.0.0
  */
 $(document).ready(function() {
-    $('.menu-categories li').addClass('block');
     $('.menu-mobile').on('click', function(e) {
         e.preventDefault();
         $(this).toggleClass('open');
         $('.menu-principal-container').toggleClass('open');
-    });
-    var getPost = function(id) {
-        console.log('entra2');
-
-        $('.results-roses').html('');
-        $('.results-roses').append('<div class="loader"></div>');
-        const headers = new Headers({
-            'Content-Type': 'application/json',
-            'X-WP-Nonce': ajax_var.nonce
-        });
- 
-        fetch(ajax_var.url+id, {
-            method: 'get',
-            headers: headers,
-            credentials: 'same-origin',
-            data: {id_post: id},
-        })
-        .then(response => {
-            $('.loader').remove();
-            $('.menu-categories li').removeClass('block');
-            return response.ok ? response.json() : 'Not Found...';
-        }).then(json_response => {
-            
-            let html;
-            if (typeof json_response === 'object') {
-                html ='';
-                json_response.forEach((element, index, data) => {
-                    html += '<div class="col-6"><div class="block-rose"><img src="'+element.acf_fields.image_cover.url+'"/><h2 class="title-rose">'+ element.title.rendered +'</h2><a class="see-more" href="'+ element.link +'">See more</a></div></div>';
-                });
-            } else {
-                html = json_response;
-            }
-            $('.results-roses').html(html);
-        });
-    }
-
-    // var getPost = function(id) {
-    //     console.log('entra');
-    //     var ajaxscript = { ajax_url: '' + dcms_vars.ajaxurl + '' }
-    //     $.ajax({
-    //         type: 'POST',
-    //         url: ajaxscript.ajax_url,
-    //         dataType: "json", // add data type
-    //         data: {
-    //             action: 'get_ajax_posts',
-    //             id_post: id
-    //         },
-    //         success: function(response) {
-    //             console.log(response);
-
-    //             $('.results-roses').html(response);
-    //         }
-    //     });
-    // }
-    $('.menu-categories li:first-child').trigger('click');
-    $('.menu-categories li').on('click', function() {
-        $('.menu-categories li').removeClass('active');
-        var term = $(this).attr('dataid');
-        $(this).addClass('active');
-        getPost(term);
     });
 
     

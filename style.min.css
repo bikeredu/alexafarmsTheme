@@ -1,4 +1,4 @@
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+@import url(http://allfont.es/allfont.css?fonts=bodoni);/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{margin:0}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
 audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
@@ -77,6 +77,7 @@ textarea{resize:vertical}
 *,*:after,*:before{-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;text-rendering:optimizeLegibility}
 html{font-size:62.5%;height:100%;min-height:100%}
 @font-face{font-family:"Conv_Palatino";font-style:normal;font-weight:normal;src:url("assets/fonts//Palatino.eot");src:url("assets/fonts//Palatino.eot#iefix") format("embedded-opentype"),url("assets/fonts//Palatino.woff") format("woff"),url("assets/fonts//Palatino.ttf") format("truetype"),url("assets/fonts//Palatino.svg#Palatino") format("svg")}
+@font-face{font-family:"GreatVibes";font-style:normal;font-weight:normal;src:url("assets/fonts//GreatVibes-Regular.eot");src:url("assets/fonts//GreatVibes-Regular.eot#iefix") format("embedded-opentype"),url("assets/fonts//GreatVibes-Regular.woff") format("woff"),url("assets/fonts//GreatVibes-Regular.ttf") format("truetype"),url("assets/fonts//GreatVibes-Regular.svg#GreatVibes-Regular") format("svg")}
 /*! Font Awesome Free 5.10.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */@font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:900;font-display:auto;src:url(assets/fonts/fa-solid-900.eot);src:url(assets/fonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(assets/fonts/fa-solid-900.woff2) format("woff2"),url(assets/fonts/fa-solid-900.woff) format("woff"),url(assets/fonts/fa-solid-900.ttf) format("truetype"),url(assets/fonts/fa-solid-900.svg#fontawesome) format("svg")}
 .fa,.fas{font-family:"Font Awesome 5 Free";font-weight:900}
 @font-face{font-family:'Font Awesome 5 Brands';font-style:normal;font-weight:normal;font-display:auto;src:url("assets/fonts/fa-brands-400.eot");src:url("assets/fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),url("assets/fonts/fa-brands-400.woff2") format("woff2"),url("assets/fonts/fa-brands-400.woff") format("woff"),url("assets/fonts/fa-brands-400.ttf") format("truetype"),url("assets/fonts/fa-brands-400.svg#fontawesome") format("svg")}
@@ -164,23 +165,24 @@ footer .copyright p{width:100%}
 .video-responsive{position:relative;padding-bottom:42.25%;padding-top:30px;height:0;overflow:hidden}
 .video-responsive iframe,.video-responsive object,.video-responsive embed{position:absolute;top:50%;left:50%;width:100%;height:100%;max-height:400px;max-width:960px;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}
 .box-collection{padding:10px 0;background-color:#f5ece9;position:fixed;width:100%;top:115px;z-index:1000}
-.box-collection+.block-breadcrumb{padding-top:75px}
+.box-collection+.block-breadcrumb{padding-top:57px}
 .box-collection .logo-collection img{max-height:50px;width:auto}
-.box-collection .logo-collection .term-name{font-size:26px;color:#006747}
+.box-collection .logo-collection .term-name{font-size:26px;color:#006747;padding:7px 0;display:block}
 .details{color:#4d4b4b}
 .details .logo{margin:0 0 25px 0;display:block}
 .details .logo figcaption{font-size:16px;margin-top:25px}
 .details .features{display:block;font-size:16px}
 .details .features dt{color:#701d45;display:inline-block}
 .details .features dd{display:inline-block}
-.slider-rose.slick-slider{margin-bottom:45px !important}
+.slider-rose.slick-slider{margin-bottom:15px !important}
 .slider-rose .slick-track .slick-slide{max-height:520px;overflow:hidden}
 .slider-rose .slick-dots li button{background-color:#666;border-radius:50%;width:15px;height:15px}
 .slider-rose .slick-dots li button::before{color:transparent}
 .slider-rose .slick-dots li.slick-active button{background-color:#c80065}
+.carousel .slick-slide{margin:0 7px;cursor:pointer}
 .search-form{padding:0;overflow:hidden;position:absolute;right:0;right:50px}
 .search-form .screen-reader-text{position:absolute;height:27px;width:27px;overflow:hidden;color:transparent;right:0;clip:inherit}
-.search-form .screen-reader-text:before{content:"\f002";font-family:"Font Awesome 5 Free";font-weight:900;color:#fff;font-size:17px;padding:2px 5px;display:block;background:#c80065}
+.search-form .screen-reader-text:before{content:"\f002";font-family:"Font Awesome 5 Free";font-weight:900;color:#fff;font-size:17px;padding:2px 5px;display:block;background:#b0a171}
 .search-form .search-field{height:22px;padding:2px 5px;color:#666;font-size:14px;border:1px solid #ccc;width:160px;background:#fff}
 .search-form .search-submit{position:absolute;height:27px;width:27px;overflow:hidden;color:transparent;right:0;top:0}
 .content-collection{margin-top:35px}
@@ -189,9 +191,14 @@ footer .copyright p{width:100%}
 .archive h1{width:100%;text-align:center;font-size:28px}
 p{width:100%;font-size:16px;color:#666}
 .rose-list{margin-top:35px}
+.tm{font-size:.5em;position:relative;top:-31%}
 body.Purple .block-rose .title-rose{color:#c80065}
 body.Purple .box-collection{background-color:#f5ece9}
 body.Purple .box-collection .term-name{color:#666}
+body.David .block-rose .title-rose{color:#6c1d45}
+body.David .content-collection h1{font-family:'Bodoni';color:#6c1d45;font-size:30px}
+body.David .box-collection{background-color:#f5ece9}
+body.David .box-collection .term-name{color:#6c1d45}
 body.Gray .block-rose .title-rose{color:#4c4c4c}
 body.Gray .box-collection{background-color:#666}
 body.Gray .box-collection .term-name{color:#000}
@@ -208,7 +215,8 @@ body.Golden .box-collection .term-name{color:#b0a171}
 .menu-categories li.active{color:#fff;background-color:#c80065}
 .menu-categories li.block{pointer-events:none}
 .block-rose{margin:0 15px 30px}
-.block-rose .see-more{float:right;padding:5px 15px;color:#fff;display:block;margin-top:12px;background-color:#c80065}
+.block-rose img{width:100%}
+.block-rose .see-more{float:right;padding:5px 15px;color:#fff;display:block;margin-top:12px;background-color:#b0a171}
 .block-rose .title-rose{font-size:24px;font-weight:normal;position:relative;display:inline-block;margin:15px 0 0 0}
 .block-rose .title-rose:after{content:'TM';position:absolute;left:100%;top:0;font-size:12px;margin-left:5px}
 .block-rose .logo-rose{height:55px;margin-top:1px}
@@ -279,9 +287,22 @@ body.Golden .box-collection .term-name{color:#b0a171}
 .page .block-head-title{width:100%}
 .page .block-head-title h1{font-size:28px;text-align:center;padding-bottom:.6em;position:relative;margin-bottom:30px}
 .page .block-head-title h1:before{content:'';position:absolute;height:2px;background-color:#006747;width:80px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);bottom:0}
+.page .block-page .font-GreatVibes{font-family:'GreatVibes';text-align:center;font-size:40px;margin:35px 0 20px}
+.page .block-page .purple{color:#c80065}
+.page .block-page .team-title{padding:65px 0 15px;text-align:center;font-size:1.8rem;position:relative;margin-bottom:10px}
+.page .block-page .team-title:before{content:'';position:absolute;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);height:3px;width:60px;background-color:#006747;bottom:0}
+.page .block-page .ab-profile-name{color:#006747 !important;font-weight:normal}
+.page .block-page .ab-profile-title{color:#c80065 !important;font-family:'GreatVibes';font-size:1.3rem !important}
+.page .block-page .ab-block-profile .ab-profile-text{margin-top:10px}
+.page .block-page .ab-block-profile .ab-profile-text p{font-size:.83rem}
 .page .block-page h2{font-size:20px;color:#4c4c4c;width:100%;line-height:22px;color:#006747}
+.page .block-page h2.subtitle{font-size:24px;text-align:center;margin-top:35px}
+.page .block-page h2.font-GreatVibes{text-align:center;font-size:46px;margin:75px 0 35px}
+.page .block-page h3{text-align:center;font-size:20px;color:#c80065;margin:35px 0 15px}
 .page .block-page p{width:100%;font-size:14px;line-height:18px;color:#666}
 .page .block-page a{color:#006747;text-decoration:none}
+.page .block-page .wp-block-column h3{text-align:left;margin:15px 0}
+.page .block-page .wp-block-embed-youtube iframe{width:100%;height:400px}
 .page .block-certifications{padding:1.2% 0}
 .page .block-certifications .ab-profile-avatar-wrap{border-right:1px solid #b0a171;padding:15px 25px 15px 15px}
 .page .block-certifications .ab-profile-avatar-wrap .ab-profile-image-wrap{height:auto;width:auto;background:transparent}
@@ -388,9 +409,10 @@ footer .footer-menu:first-child,footer .footer-menu:nth-child(2){border-right:1p
 .menu-principal-container .menu li .sub-menu li{margin:5px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .menu-principal-container .menu li .sub-menu li a{color:#4c4c4c}
 .menu-principal-container .menu li .sub-menu li a:hover,.menu-principal-container .menu li .sub-menu li a:focus{color:#b0a171;text-decoration:none}
-.menu-principal-container .menu li .sub-menu li.submenu>a{color:#006747;cursor:copy;pointer-events:none}
+.menu-principal-container .menu li .sub-menu li.submenu>a{color:#006747;font-weight:bold;cursor:copy;pointer-events:none}
 .menu-principal-container .menu li .sub-menu li .sub-menu{display:block;position:relative;max-width:auto;margin:0;padding:0;width:auto}
-.menu-principal-container .menu li .sub-menu li .sub-menu li{display:block;margin:5px 0;float:none}
+.menu-principal-container .menu li .sub-menu li .sub-menu li{display:block;margin:3px 0;float:none}
+.menu-principal-container .menu li .sub-menu li .sub-menu li a{font-size:.82rem}
 }@media(min-width:769px) and (min-width:1024px){.menu-principal-container .menu li .sub-menu{width:400px}
 }@media(min-width:769px) and (min-width:1140px){.menu-principal-container .menu li .sub-menu{width:600px}
 }@media(min-width:1024px){.wp-caption .wp-caption-text,.gallery-caption{font:300 2rem/3.1rem sans-serif}

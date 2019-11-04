@@ -31,7 +31,7 @@ function wpgt_scripts() {
 		wp_enqueue_script( 'wpgt_vendorsJs', get_template_directory_uri() . '/assets/js/vendors.min.js' );
 
 		// Enqueue custom JS after vendors.
-		wp_enqueue_script( 'wpgt_customJs', get_template_directory_uri() . '/assets/js/custom.min.js' );
+		wp_enqueue_script( 'wpgt_customJs', get_template_directory_uri() . '/assets/js/custom.min.js', array( 'jquery' ) );
 
 		// Minified and Concatenated styles.
 		wp_enqueue_style( 'scroll_style', get_template_directory_uri() . '/assets/css/jquery.mCustomScrollbar.css', array(), '1.0', 'all' );
@@ -118,8 +118,7 @@ function mytheme_customize_register( $wp_customize ) {
     $wp_customize->add_section( 'mytheme_company_section' , array(
         'title'      => __( 'Name event', 'mytheme' ),
         'priority'   => 30,
-	));
-	
+	));	
 	$wp_customize->add_section( 'mytheme_company_section2' , array(
         'title'      => __( 'Social media', 'mytheme' ),
         'priority'   => 31,
@@ -412,7 +411,7 @@ function get_post_primary_category($post_id, $term='category', $return_all_categ
 
 
 function my_load_scripts() {
-    wp_enqueue_script( 'my_js', get_theme_file_uri( 'assets/js/custom.min.js' ), array( 'jquery' ) );
+    wp_enqueue_script( 'my_js', get_theme_file_uri( 'assets/js/ajax-posts.js' ), array( 'jquery' ) );
  
     wp_localize_script( 'my_js', 'ajax_var', array(
         'url'    => rest_url( 'wp/v2/rose?collections=' ),
@@ -421,6 +420,7 @@ function my_load_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'my_load_scripts' );
 
+add_theme_support( 'post-thumbnails' );
 /**
  * Create REST field of ACF values for WordPress REST API
  */
@@ -448,5 +448,7 @@ function get_acf_fields_for_api( $object ) {
 	return $data ?: false;
 }
 
+
+	
 	
 ?>

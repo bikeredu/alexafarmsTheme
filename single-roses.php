@@ -53,6 +53,13 @@ get_header(); ?>
                   </li>
               <?php endforeach; ?>
           </ul>
+          <ul class="carousel">
+              <?php foreach( $images as $image ): ?>
+                  <li>
+                    <?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+                  </li>
+              <?php endforeach; ?>
+          </ul>
       <?php endif; ?>
     </div>
     <div class="col-5 details">
@@ -134,11 +141,21 @@ get_header(); ?>
   <script type="text/javascript">
     $(document).ready(function(){
       $('.slider-rose').slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
         slidesToShow: 1,
-        adaptiveHeight: true
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        arrows: false,
+        fade: true,
+        speed: 500,
+        asNavFor: '.carousel'
+      });
+      $('.carousel').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.slider-rose',
+        centerMode: true,
+        focusOnSelect: true,
+        arrows: true
       });
     });
   </script>

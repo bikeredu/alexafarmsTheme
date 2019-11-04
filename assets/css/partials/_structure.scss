@@ -25,6 +25,7 @@ html {
 }
 
 @include fontface('Conv_Palatino', 'assets/fonts/', 'Palatino');
+@include fontface('GreatVibes', 'assets/fonts/', 'GreatVibes-Regular');
 
 /*!
  * Font Awesome Free 5.10.1 by @fontawesome - https://fontawesome.com
@@ -58,6 +59,8 @@ html {
 .fab {
     font-family: 'Font Awesome 5 Brands';
 }
+
+@import url(http://allfont.es/allfont.css?fonts=bodoni);
 
 body {
     font: 400 14px/1.4 'Conv_Palatino';
