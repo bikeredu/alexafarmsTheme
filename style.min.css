@@ -214,6 +214,24 @@ body.Golden .box-collection .term-name{color:#b0a171}
 .menu-categories li:hover{background-color:#a29f9c;color:#006747}
 .menu-categories li.active{color:#fff;background-color:#c80065}
 .menu-categories li.block{pointer-events:none}
+.home{overflow-x:initial !important}
+.home .category-roses{max-width:900px;margin:35px auto 0}
+.home .category-roses .container{border-bottom:1px solid #b0a171}
+.home .category-roses a{text-decoration:none;color:#006747}
+.home .category-roses .feature-image{padding:10px;border:1px solid #ccc}
+.home .category-roses .logo{height:65px;display:block;margin:6px auto;float:none}
+.home .category-roses .name-collection{display:block;width:100%;text-align:center;font-size:1.3rem;margin-bottom:25px}
+.home .category-roses .btn-collection{border:1px solid #006747;padding:5px;display:block;margin:15px auto;font-size:1.1rem;max-width:220px;text-align:center;-webkit-transition:.45s;transition:.45s}
+.home .category-roses .btn-collection:hover{background-color:#006747;color:#fff}
+.page .block-page.home h2{font-size:28px;text-align:center;margin:67px 0 25px 0;padding-bottom:25px;position:relative}
+.page .block-page.home h2:before{content:'';height:2px;left:50%;width:12%;-webkit-transform:translateX(-50%);transform:translateX(-50%);position:absolute;background-color:#006747;bottom:0}
+.page .block-page.home p{text-align:center;max-width:900px;margin:0 auto}
+.block-news{margin:35px 0 65px}
+.block-news .title{margin:0 auto 35px;font-size:28px;text-align:center;padding-bottom:15px;position:relative}
+.block-news .title:before{content:'';height:2px;left:50%;width:12%;-webkit-transform:translateX(-50%);transform:translateX(-50%);position:absolute;background-color:#006747;bottom:0}
+.block-news a{border:1px solid #ccc;display:block}
+.block-news a .image-post{width:100%}
+.block-news a .title-post{color:#006747;padding:15px 10px;font-size:1.1rem;text-align:center}
 .block-rose{margin:0 15px 30px}
 .block-rose img{width:100%}
 .block-rose .see-more{float:right;padding:5px 15px;color:#fff;display:block;margin-top:12px;background-color:#b0a171}
