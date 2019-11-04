@@ -68,7 +68,7 @@ $termsRoses = get_terms( $taxonomies , $args);
         </div>
         <div class="row">
             <div class="col-6">
-                <a class="btn-collection" href="collections/variety/">Search by Variety</a>
+                <a class="btn-collection" href="by-variety/">Search by Variety</a>
             </div>
             <div class="col-6"><a class="btn-collection" href="collections/color/">Search by Color</a></div>
         </div>
