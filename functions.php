@@ -78,7 +78,7 @@ function the_breadcrumb() {
             $post = get_post();
             $cat = new WPSEO_Primary_Term('category', $post->ID); $cat = $cat->get_primary_term(); $category_link = get_category_link( $cat );
             if($cat != ''){
-                echo '<a href='.esc_url( $category_link ).'<i class="fas fa-chevron-right"></i>'.get_cat_name($cat).'</a> <i class="fas fa-chevron-right"></i>';
+                echo '<a href='.esc_url( $category_link ).'>'.get_cat_name($cat).'</a> <i class="fas fa-chevron-right"></i>';
             }
             the_title();
         }

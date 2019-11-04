@@ -49,12 +49,12 @@ $args = array(
     'cache_domain'  => 'core'
 ); 
 
-$portclients = get_terms( $taxonomies , $args);
+$termsRoses = get_terms( $taxonomies , $args);
 ?>
 <section class="category-roses">
     <div class="container">
         <div class="row">
-            <?php foreach ($portclients as $term): ?>
+            <?php foreach ($termsRoses as $term): ?>
             <div class="col-6">
                 <a href="<?php get_term_link($term)?>">
                 <?php $logoCollection = get_field('logo_collections', $term); ?>
@@ -68,9 +68,9 @@ $portclients = get_terms( $taxonomies , $args);
         </div>
         <div class="row">
             <div class="col-6">
-                <a class="btn-collection" href="/collections/variety/">Search by Variety</a>
+                <a class="btn-collection" href="collections/variety/">Search by Variety</a>
             </div>
-            <div class="col-6"><a class="btn-collection" href="/collections/color/">Search by Color</a></div>
+            <div class="col-6"><a class="btn-collection" href="collections/color/">Search by Color</a></div>
         </div>
     </div>
 </section>
