@@ -1350,6 +1350,23 @@ body {
                 font-size: 46px;
                 margin: 75px 0 35px;
             }
+            &.block-head-title {
+                font-size: 28px;
+                text-align: center;
+                padding-bottom: 0.6em;
+                position: relative;
+                margin-bottom: 30px;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    height: 2px;
+                    background-color: $color--primary;
+                    width: 80px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: 0;
+                }
+            }
         }
         h3{
             text-align: center;
