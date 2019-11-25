@@ -269,6 +269,7 @@ header {
                         display: flex;
                         flex-grow: 1;
                         flex-direction: column;
+                        max-width: 260px;
                         a {
                             color: $b;
                             &:hover,
@@ -277,11 +278,18 @@ header {
                                 text-decoration: none;
                             }
                         }
-                        &.submenu>a {
-                            color: $color--primary;
-                            font-weight: bold;
-                            cursor: copy;
-                            pointer-events: none;
+                        &.submenu{
+                            &>a {
+                                color: $color--primary;
+                                font-weight: bold;
+                                cursor: copy;
+                                pointer-events: none;
+                                &.no-visible{
+                                    visibility: hidden;
+                                    overflow: hidden;
+                                    height: 0;
+                                }
+                            }
                         }
                         .sub-menu {
                             display: block;
@@ -290,6 +298,7 @@ header {
                             margin: 0;
                             padding: 0;
                             width: auto;
+                            
                             li {
                                 display: block;
                                 margin: 3px 0;
@@ -423,6 +432,7 @@ footer {
             color: $color--primary;
             padding: 7px 0;
             display: block;
+            letter-spacing: 0.035em;
         }
     }
 }
@@ -598,6 +608,9 @@ p {
 }
 .rose-list {
     margin-top: 35px;
+    .container{
+        max-width: 1100px;
+    }
 }
 .tm{
     font-size: .5em;
@@ -609,6 +622,19 @@ body {
         .block-rose{
             .title-rose{
                 color: $pin;
+            }
+        }
+        .box-collection{
+            background-color: #f5ece9;
+            .term-name{
+                color: $gb;
+            }
+        }
+    }
+    &.Princess{
+        .block-rose{
+            .title-rose{
+                color: $color--primary;
             }
         }
         .box-collection{
@@ -706,19 +732,18 @@ body {
     width: 100%;
     li{
         padding: 3px 10px;
-        color: $gb;
+        color: $color--primary;
         font-size: 16px;
-        background-color: #f5ece9;
+        background-color: transparent;
         margin-bottom: 3px;
+        font-weight: bold;
         cursor: pointer;
         transition: .3s;
         &:hover{
-            background-color: #a29f9c;
-            color: $color--primary;
+            color: $gol;
         }
         &.active{
-            color: #fff;
-            background-color: $pin;
+            color: $gol
         }
         &.block{
             pointer-events: none;
@@ -779,6 +804,7 @@ body {
         margin: 67px 0 25px 0;
         padding-bottom: 25px;
         position: relative;
+        letter-spacing: 0.035em;
         &:before{
             content: '';
             height: 2px;
@@ -1009,6 +1035,7 @@ body {
         font-size: 32px;
         font-weight: bold;
         color: $b;
+        letter-spacing: 0.035em;
     }
     .head-title {
         font-weight: normal;
@@ -1328,10 +1355,15 @@ body {
             font-family: 'GreatVibes';
             font-size: 1.3rem !important;
         }
-        .ab-block-profile .ab-profile-text{
-            margin-top: 10px;
-            p{
-                font-size: 0.83rem;
+        .ab-block-profile {
+            &+p{
+                padding: 0 24px;
+            }
+            .ab-profile-text{
+                margin-top: 10px;
+                p{
+                    font-size: 0.83rem;
+                }
             }
         }
         h2 {
@@ -1340,6 +1372,7 @@ body {
             width: 100%;
             line-height: 22px;
             color: $color--primary;
+            letter-spacing: 0.035em;
             &.subtitle{
                 font-size: 24px;
                 text-align: center;
@@ -2169,6 +2202,7 @@ body {
     .block-results {
         h2 {
             font-size: 28px;
+            letter-spacing: 0.035em;
         }
         .box-article {
             width: 100%;
@@ -2340,6 +2374,7 @@ body {
             width: 68%;
             h2 {
                 width: auto;
+                letter-spacing: 0.035em;
             }
             ul {
                 li {
