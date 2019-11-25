@@ -246,7 +246,7 @@ body.Golden .box-collection .term-name{color:#b0a171}
 .single-post{padding-top:30px}
 .comments-area{border:1px solid #b0a171;padding:25px 15px;text-align:center;width:100%;margin-top:50px}
 .wp-block-file{font-size:1.1rem;color:#006747;text-align:center}
-.wp-block-file .wp-block-file__button{display:block;margin:0 auto;max-width:200px;background-color:#b0a171;color:#fff !important;font-size:1rem}
+.wp-block-file .wp-block-file__button{display:block;margin:0 auto;max-width:200px;background-color:#b0a171;color:#fff !important;font-size:1rem;border-radius:none}
 .head-title{font-size:16px;font-weight:bold;line-height:22px;color:#4c4c4c;padding:21px 0 10px;border-bottom:1px solid #d9d9d9;position:relative;margin-bottom:24px}
 .head-title:before{content:'';position:absolute;height:1px;width:50px;left:0;bottom:-1px;display:block;background-color:#666}
 .head-title .view-all{color:#009ddf;line-height:23px;font-size:14px;background:url(assets/img/ic-keyboard-arrow-right.svg) no-repeat 90% 41%;padding-right:22px;position:absolute;right:0}
@@ -438,8 +438,8 @@ footer .footer-menu:first-child,footer .footer-menu:nth-child(2){border-right:1p
 .menu-principal-container .menu li .sub-menu li{margin:5px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;max-width:260px}
 .menu-principal-container .menu li .sub-menu li a{color:#4c4c4c}
 .menu-principal-container .menu li .sub-menu li a:hover,.menu-principal-container .menu li .sub-menu li a:focus{color:#b0a171;text-decoration:none}
+.menu-principal-container .menu li .sub-menu li.submenu.no-visible>a{visibility:hidden;overflow:hidden;height:0}
 .menu-principal-container .menu li .sub-menu li.submenu>a{color:#006747;font-weight:bold;cursor:copy;pointer-events:none}
-.menu-principal-container .menu li .sub-menu li.submenu>a.no-visible{visibility:hidden;overflow:hidden;height:0}
 .menu-principal-container .menu li .sub-menu li .sub-menu{display:block;position:relative;max-width:auto;margin:0;padding:0;width:auto}
 .menu-principal-container .menu li .sub-menu li .sub-menu li{display:block;margin:3px 0;float:none}
 .menu-principal-container .menu li .sub-menu li .sub-menu li a{font-size:.82rem}

@@ -279,16 +279,19 @@ header {
                             }
                         }
                         &.submenu{
+                            &.no-visible{
+                                & > a{
+                                    visibility: hidden;
+                                    overflow: hidden;
+                                    height: 0;
+                                }
+                            }
                             &>a {
                                 color: $color--primary;
                                 font-weight: bold;
                                 cursor: copy;
                                 pointer-events: none;
-                                &.no-visible{
-                                    visibility: hidden;
-                                    overflow: hidden;
-                                    height: 0;
-                                }
+                                
                             }
                         }
                         .sub-menu {
@@ -916,6 +919,7 @@ body {
         background-color: $gol;
         color: #fff !important;
         font-size: 1rem;
+        border-radius: none;
     }
 }
 
