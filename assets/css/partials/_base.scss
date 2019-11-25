@@ -919,7 +919,7 @@ body {
         background-color: $gol;
         color: #fff !important;
         font-size: 1rem;
-        border-radius: none;
+        border-radius: 0;
     }
 }
 
@@ -1310,6 +1310,7 @@ body {
             padding-bottom: 0.6em;
             position: relative;
             margin-bottom: 30px;
+            letter-spacing: 0.035em;
             &:before {
                 content: '';
                 position: absolute;

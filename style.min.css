@@ -246,7 +246,7 @@ body.Golden .box-collection .term-name{color:#b0a171}
 .single-post{padding-top:30px}
 .comments-area{border:1px solid #b0a171;padding:25px 15px;text-align:center;width:100%;margin-top:50px}
 .wp-block-file{font-size:1.1rem;color:#006747;text-align:center}
-.wp-block-file .wp-block-file__button{display:block;margin:0 auto;max-width:200px;background-color:#b0a171;color:#fff !important;font-size:1rem;border-radius:none}
+.wp-block-file .wp-block-file__button{display:block;margin:0 auto;max-width:200px;background-color:#b0a171;color:#fff !important;font-size:1rem;border-radius:0}
 .head-title{font-size:16px;font-weight:bold;line-height:22px;color:#4c4c4c;padding:21px 0 10px;border-bottom:1px solid #d9d9d9;position:relative;margin-bottom:24px}
 .head-title:before{content:'';position:absolute;height:1px;width:50px;left:0;bottom:-1px;display:block;background-color:#666}
 .head-title .view-all{color:#009ddf;line-height:23px;font-size:14px;background:url(assets/img/ic-keyboard-arrow-right.svg) no-repeat 90% 41%;padding-right:22px;position:absolute;right:0}
@@ -311,7 +311,7 @@ body.Golden .box-collection .term-name{color:#b0a171}
 .modal .content .btn-blue{background:#006ab2;font-size:16px;padding:15px 80px;color:#fff;font-weight:bold}
 .modal .content .btn-close{background:#666 url(assets/img/ic-close.svg) no-repeat center center;padding:15px;border-radius:50%;position:absolute;display:block;right:-25px;top:-25px;height:50px;width:50px;display:block}
 .page .block-head-title{width:100%}
-.page .block-head-title h1{font-size:28px;text-align:center;padding-bottom:.6em;position:relative;margin-bottom:30px}
+.page .block-head-title h1{font-size:28px;text-align:center;padding-bottom:.6em;position:relative;margin-bottom:30px;letter-spacing:.035em}
 .page .block-head-title h1:before{content:'';position:absolute;height:2px;background-color:#006747;width:80px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);bottom:0}
 .page .block-page .font-GreatVibes{font-family:'GreatVibes';text-align:center;font-size:40px;margin:35px 0 20px}
 .page .block-page .purple{color:#c80065}
