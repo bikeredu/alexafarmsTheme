@@ -26,6 +26,8 @@ html {
 
 @include fontface('Conv_Palatino', 'assets/fonts/', 'Palatino');
 @include fontface('GreatVibes', 'assets/fonts/', 'GreatVibes-Regular');
+@include fontface('Trajan', 'assets/fonts/', 'trajan-bold');
+@include fontface('Rene', 'assets/fonts/', 'Rene_Bold');
 
 /*!
  * Font Awesome Free 5.10.1 by @fontawesome - https://fontawesome.com
@@ -63,7 +65,7 @@ html {
 @import url(http://allfont.es/allfont.css?fonts=bodoni);
 
 body {
-    font: 400 14px/1.4 'Conv_Palatino';
+    font: 400 16px/1.4 'Conv_Palatino';
     color: $color--primary;
     margin: 0;
     background: $w;

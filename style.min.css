@@ -78,11 +78,13 @@ textarea{resize:vertical}
 html{font-size:62.5%;height:100%;min-height:100%}
 @font-face{font-family:"Conv_Palatino";font-style:normal;font-weight:normal;src:url("assets/fonts//Palatino.eot");src:url("assets/fonts//Palatino.eot#iefix") format("embedded-opentype"),url("assets/fonts//Palatino.woff") format("woff"),url("assets/fonts//Palatino.ttf") format("truetype"),url("assets/fonts//Palatino.svg#Palatino") format("svg")}
 @font-face{font-family:"GreatVibes";font-style:normal;font-weight:normal;src:url("assets/fonts//GreatVibes-Regular.eot");src:url("assets/fonts//GreatVibes-Regular.eot#iefix") format("embedded-opentype"),url("assets/fonts//GreatVibes-Regular.woff") format("woff"),url("assets/fonts//GreatVibes-Regular.ttf") format("truetype"),url("assets/fonts//GreatVibes-Regular.svg#GreatVibes-Regular") format("svg")}
+@font-face{font-family:"Trajan";font-style:normal;font-weight:normal;src:url("assets/fonts//trajan-bold.eot");src:url("assets/fonts//trajan-bold.eot#iefix") format("embedded-opentype"),url("assets/fonts//trajan-bold.woff") format("woff"),url("assets/fonts//trajan-bold.ttf") format("truetype"),url("assets/fonts//trajan-bold.svg#trajan-bold") format("svg")}
+@font-face{font-family:"Rene";font-style:normal;font-weight:normal;src:url("assets/fonts//Rene_Bold.eot");src:url("assets/fonts//Rene_Bold.eot#iefix") format("embedded-opentype"),url("assets/fonts//Rene_Bold.woff") format("woff"),url("assets/fonts//Rene_Bold.ttf") format("truetype"),url("assets/fonts//Rene_Bold.svg#Rene_Bold") format("svg")}
 /*! Font Awesome Free 5.10.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */@font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:900;font-display:auto;src:url(assets/fonts/fa-solid-900.eot);src:url(assets/fonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(assets/fonts/fa-solid-900.woff2) format("woff2"),url(assets/fonts/fa-solid-900.woff) format("woff"),url(assets/fonts/fa-solid-900.ttf) format("truetype"),url(assets/fonts/fa-solid-900.svg#fontawesome) format("svg")}
 .fa,.fas{font-family:"Font Awesome 5 Free";font-weight:900}
 @font-face{font-family:'Font Awesome 5 Brands';font-style:normal;font-weight:normal;font-display:auto;src:url("assets/fonts/fa-brands-400.eot");src:url("assets/fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),url("assets/fonts/fa-brands-400.woff2") format("woff2"),url("assets/fonts/fa-brands-400.woff") format("woff"),url("assets/fonts/fa-brands-400.ttf") format("truetype"),url("assets/fonts/fa-brands-400.svg#fontawesome") format("svg")}
 .fab{font-family:'Font Awesome 5 Brands'}
-body{font:400 14px/1.4 'Conv_Palatino';color:#006747;margin:0;background:#fff;height:100%;min-height:100%;margin-top:84px}
+body{font:400 16px/1.4 'Conv_Palatino';color:#006747;margin:0;background:#fff;height:100%;min-height:100%;margin-top:84px}
 .clear:before,.clear:after{content:' ';display:table}
 .clearfix{display:block}
 .clear:after{clear:both}
@@ -159,7 +161,7 @@ footer .Socialmedia{margin-top:20px}
 footer .Socialmedia a{color:#b0a171;font-size:18px;margin:0 5px}
 footer .copyright{text-align:center;margin-top:35px}
 footer .copyright p{width:100%}
-.block-breadcrumb{padding:10px 0 25px;font-size:14px;color:#a29f9c}
+.block-breadcrumb{padding:10px 0 25px;font-size:14px;color:#a29f9c;display:none}
 .block-breadcrumb a{color:#c80065}
 .block-breadcrumb i.fas.fa-chevron-right{margin:0 8px 0;font-size:10px}
 .video-responsive{position:relative;padding-bottom:42.25%;padding-top:30px;height:0;overflow:hidden}
@@ -186,10 +188,12 @@ footer .copyright p{width:100%}
 .search-form .search-field{height:22px;padding:2px 5px;color:#666;font-size:14px;border:1px solid #ccc;width:160px;background:#fff}
 .search-form .search-submit{position:absolute;height:27px;width:27px;overflow:hidden;color:transparent;right:0;top:0}
 .content-collection{margin-top:35px}
+.content-collection h1{letter-spacing:.085em}
+.content-collection h1:before{content:'';position:absolute;height:2px;width:80px;background-color:#006747;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);bottom:0}
 .hero-image{width:100%;height:380px;position:relative;overflow:hidden;font-size:16px}
 .img-parallax{width:100vmax;z-index:1;position:absolute;top:0;left:50%;pointer-events:none;-webkit-transform:translate(-50%,0);transform:translate(-50%,0)}
 .archive h1{width:100%;text-align:center;font-size:28px}
-p{width:100%;font-size:16px;color:#666}
+p{width:100%;font-size:18px;color:#666}
 .rose-list{margin-top:35px}
 .rose-list .container{max-width:1100px}
 .tm{font-size:.5em;position:relative;top:-31%}
@@ -197,12 +201,20 @@ body.Purple .block-rose .title-rose{color:#c80065}
 body.Purple .box-collection{background-color:#f5ece9}
 body.Purple .box-collection .term-name{color:#666}
 body.Princess .block-rose .title-rose{color:#006747}
-body.Princess .box-collection{background-color:#f5ece9}
+body.Princess .content-collection h1{font-family:'Trajan';color:#000;font-size:30px;letter-spacing:.085em}
+body.Princess .content-collection h1:before{background-color:#000}
+body.Princess .box-collection{background-color:#eedadd}
 body.Princess .box-collection .term-name{color:#666}
-body.David .block-rose .title-rose{color:#6c1d45}
-body.David .content-collection h1{font-family:'Bodoni';color:#6c1d45;font-size:30px}
+body.Wabara .block-rose .title-rose{color:#4d4b4b}
+body.Wabara .content-collection h1{font-family:'Rene';color:#4d4b4b;font-size:30px;letter-spacing:.085em}
+body.Wabara .content-collection h1:before{background-color:#4d4b4b}
+body.Wabara .box-collection{background-color:#c7c5c5}
+body.Wabara .box-collection .term-name{color:#000}
+body.David .block-rose .title-rose{color:#701d45}
+body.David .content-collection h1{font-family:'Bodoni';color:#6c1d45;font-size:30px;letter-spacing:.085em}
+body.David .content-collection h1:before{background-color:#6c1d45}
 body.David .box-collection{background-color:#f5ece9}
-body.David .box-collection .term-name{color:#6c1d45}
+body.David .box-collection .term-name{color:#701d45}
 body.Gray .block-rose .title-rose{color:#4c4c4c}
 body.Gray .box-collection{background-color:#666}
 body.Gray .box-collection .term-name{color:#000}
@@ -224,14 +236,14 @@ body.Golden .box-collection .term-name{color:#b0a171}
 .home .category-roses a{text-decoration:none;color:#006747}
 .home .category-roses .feature-image{padding:10px;border:1px solid #ccc}
 .home .category-roses .logo{height:65px;display:block;margin:6px auto;float:none}
-.home .category-roses .name-collection{display:block;width:100%;text-align:center;font-size:1.3rem;margin-bottom:25px}
+.home .category-roses .name-collection{display:block;width:100%;text-align:center;font-size:1.2rem;margin-bottom:25px;letter-spacing:.085em}
 .home .category-roses .btn-collection{border:1px solid #006747;padding:5px;display:block;margin:15px auto;font-size:1.1rem;max-width:220px;text-align:center;-webkit-transition:.45s;transition:.45s}
 .home .category-roses .btn-collection:hover{background-color:#006747;color:#fff}
-.page .block-page.home h2{font-size:28px;text-align:center;margin:67px 0 25px 0;padding-bottom:25px;position:relative;letter-spacing:.035em}
+.page .block-page.home h2{font-size:28px;text-align:center;margin:67px 0 25px 0;padding-bottom:25px;position:relative;letter-spacing:.085em}
 .page .block-page.home h2:before{content:'';height:2px;left:50%;width:12%;-webkit-transform:translateX(-50%);transform:translateX(-50%);position:absolute;background-color:#006747;bottom:0}
 .page .block-page.home p{text-align:center;max-width:900px;margin:0 auto}
 .block-news{margin:35px 0 65px}
-.block-news .title{margin:0 auto 35px;font-size:28px;text-align:center;padding-bottom:15px;position:relative}
+.block-news .title{margin:0 auto 35px;font-size:28px;text-align:center;padding-bottom:15px;position:relative;letter-spacing:.085em}
 .block-news .title:before{content:'';height:2px;left:50%;width:12%;-webkit-transform:translateX(-50%);transform:translateX(-50%);position:absolute;background-color:#006747;bottom:0}
 .block-news a{border:1px solid #ccc;display:block}
 .block-news a .image-post{width:100%}
@@ -239,9 +251,10 @@ body.Golden .box-collection .term-name{color:#b0a171}
 .block-rose{margin:0 15px 30px}
 .block-rose img{width:100%}
 .block-rose .see-more{float:right;padding:5px 15px;color:#fff;display:block;margin-top:12px;background-color:#b0a171}
-.block-rose .title-rose{font-size:24px;font-weight:normal;position:relative;display:inline-block;margin:15px 0 0 0}
-.block-rose .title-rose:after{content:'TM';position:absolute;left:100%;top:0;font-size:12px;margin-left:5px}
+.block-rose .title-rose{font-size:24px;font-weight:normal;position:relative;display:inline-block;margin:15px 0 0 0;letter-spacing:.085em;max-width:75%}
 .block-rose .logo-rose{height:55px;margin-top:1px}
+.wp-block-image{border:1px solid #ccc;position:relative}
+.wp-block-image:before{border:1px solid #ccc;content:'';height:107%;width:107%;z-index:0;position:absolute;left:-3.5%;top:-3.5%}
 .wp-block-atomic-blocks-ab-columns.ab-layout-columns-3{margin-bottom:35px;border-bottom:3px solid #b0a171}
 .single-post{padding-top:30px}
 .comments-area{border:1px solid #b0a171;padding:25px 15px;text-align:center;width:100%;margin-top:50px}
@@ -310,8 +323,10 @@ body.Golden .box-collection .term-name{color:#b0a171}
 .modal .content p{color:#666;font-size:20px;line-height:26px;margin-bottom:45px;font-weight:normal}
 .modal .content .btn-blue{background:#006ab2;font-size:16px;padding:15px 80px;color:#fff;font-weight:bold}
 .modal .content .btn-close{background:#666 url(assets/img/ic-close.svg) no-repeat center center;padding:15px;border-radius:50%;position:absolute;display:block;right:-25px;top:-25px;height:50px;width:50px;display:block}
+.n2-section-smartslider:before{content:'';position:absolute;left:0;bottom:-150px;height:150px;width:35%;background:url(assets/img/bg_left_rose.jpg) no-repeat right top}
+.n2-section-smartslider:after{content:'';position:absolute;right:0;bottom:-150px;height:150px;width:35%;background:url(assets/img/bg_rigth_rose.jpg) no-repeat left top}
 .page .block-head-title{width:100%}
-.page .block-head-title h1{font-size:28px;text-align:center;padding-bottom:.6em;position:relative;margin-bottom:30px;letter-spacing:.035em}
+.page .block-head-title h1{font-size:28px;text-align:center;padding-bottom:.6em;position:relative;margin-bottom:30px;letter-spacing:.085em}
 .page .block-head-title h1:before{content:'';position:absolute;height:2px;background-color:#006747;width:80px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);bottom:0}
 .page .block-page .font-GreatVibes{font-family:'GreatVibes';text-align:center;font-size:40px;margin:35px 0 20px}
 .page .block-page .purple{color:#c80065}
@@ -328,7 +343,7 @@ body.Golden .box-collection .term-name{color:#b0a171}
 .page .block-page h2.block-head-title{font-size:28px;text-align:center;padding-bottom:.6em;position:relative;margin-bottom:30px}
 .page .block-page h2.block-head-title:before{content:'';position:absolute;height:2px;background-color:#006747;width:80px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);bottom:0}
 .page .block-page h3{text-align:center;font-size:20px;color:#c80065;margin:35px 0 15px}
-.page .block-page p{width:100%;font-size:14px;line-height:18px;color:#666}
+.page .block-page p{width:100%;font-size:16px;line-height:18px;color:#666}
 .page .block-page a{color:#006747;text-decoration:none}
 .page .block-page .wp-block-column h3{text-align:left;margin:15px 0}
 .page .block-page .wp-block-embed-youtube iframe{width:100%;height:400px}
@@ -431,6 +446,7 @@ footer .footer-menu:first-child,footer .footer-menu:nth-child(2){border-right:1p
 .menu-principal-container{float:left;position:initial;width:auto;padding:0;overflow:initial}
 .menu-principal-container .menu{margin:65px 0 0 45px;position:relative}
 .menu-principal-container .menu li{float:left;margin:0 10px;position:relative}
+.menu-principal-container .menu li:nth-last-child(-n+2) .sub-menu{right:0}
 .menu-principal-container .menu li a{color:#006747;font-size:1rem;padding:0 8px;-webkit-transition:.3s;transition:.3s;font-weight:normal}
 .menu-principal-container .menu li a:hover,.menu-principal-container .menu li a:focus{color:#b0a171;text-decoration:none}
 .menu-principal-container .menu li:hover .sub-menu{opacity:1;visibility:visible;margin-top:-2px}

@@ -227,6 +227,11 @@ header {
                 float: left;
                 margin: 0 10px;
                 position: relative;
+                &:nth-last-child(-n+2){
+                    .sub-menu{
+                        right: 0;
+                    }
+                }
                 a {
                     color: $color--primary;
                     font-size: 1rem;
@@ -382,6 +387,7 @@ footer {
     padding: 10px 0 25px;
     font-size: 14px;
     color: #a29f9c;
+    display: none;
     a {
         color: $pin;
     }
@@ -578,6 +584,19 @@ footer {
 //template teaxonomy
 .content-collection {
     margin-top: 35px;
+    h1{
+        letter-spacing: .085em;
+        &:before {
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 80px;
+            background-color:$color--primary;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+        }
+    }
 }
 
 .hero-image {
@@ -606,7 +625,7 @@ footer {
 
 p {
     width: 100%;
-    font-size: 16px;
+    font-size: 18px;
     color: $gb;
 }
 .rose-list {
@@ -640,17 +659,52 @@ body {
                 color: $color--primary;
             }
         }
+        .content-collection{
+            h1{
+                font-family: 'Trajan';
+                color: #000000;
+                font-size: 30px;
+                letter-spacing: .085em;
+                &:before{
+                    background-color: #000000;
+                }
+            }
+        }
         .box-collection{
-            background-color: #f5ece9;
+            background-color: #eedadd;
             .term-name{
                 color: $gb;
+            }
+        }
+    }
+    &.Wabara{
+        .block-rose{
+            .title-rose{
+                color: #4D4B4B;
+            }
+        }
+        .content-collection{
+            h1{
+                font-family: 'Rene';
+                color: #4D4B4B;
+                font-size: 30px;
+                letter-spacing: .085em;
+                &:before{
+                    background-color: #4D4B4B;
+                }
+            }
+        }
+        .box-collection{
+            background-color: #c7c5c5;
+            .term-name{
+                color: #000;
             }
         }
     }
     &.David{
         .block-rose{
             .title-rose{
-                color: #6c1d45;
+                color: #701D45;
             }
         }
         .content-collection{
@@ -658,12 +712,16 @@ body {
                 font-family: 'Bodoni';
                 color: #6c1d45;
                 font-size: 30px;
+                letter-spacing: .085em;
+                &:before{
+                    background-color: #6c1d45;
+                }
             }
         }
         .box-collection{
             background-color: #f5ece9;
             .term-name{
-                color: #6c1d45;
+                color: #701D45;
             }
         }
     }
@@ -780,8 +838,9 @@ body {
             display: block;
             width: 100%;
             text-align: center;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             margin-bottom: 25px;
+            letter-spacing: .085em;
         }
         .btn-collection{
             border:1px solid $color--primary;
@@ -807,7 +866,7 @@ body {
         margin: 67px 0 25px 0;
         padding-bottom: 25px;
         position: relative;
-        letter-spacing: 0.035em;
+        letter-spacing: .085em;
         &:before{
             content: '';
             height: 2px;
@@ -833,6 +892,7 @@ body {
         text-align: center;
         padding-bottom: 15px;
         position: relative;
+        letter-spacing: .085em;
         &:before{
             content: '';
             height: 2px;
@@ -877,18 +937,26 @@ body {
         position: relative;
         display: inline-block;
         margin: 15px 0 0 0;
-        &:after{
-            content: 'TM';
-            position: absolute;
-            left: 100%;
-            top: 0;
-            font-size: 12px;
-            margin-left: 5px;
-        }
+        letter-spacing: .085em;
+        max-width: 75%;
     }
     .logo-rose {
         height: 55px;
         margin-top: 1px;
+    }
+}
+.wp-block-image{
+    border: 1px solid #ccc;
+    position: relative;
+    &:before{
+        border: 1px solid #ccc;
+        content: '';
+        height: 107%;
+        width: 107%;
+        z-index: 0;
+        position: absolute;
+        left: -3.5%;
+        top: -3.5%;
     }
 }
 
@@ -1300,6 +1368,26 @@ body {
         }
     }
 }
+.n2-section-smartslider{
+    &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -150px;
+        height: 150px;
+        width: 35%;
+        background: url(assets/img/bg_left_rose.jpg) no-repeat right top;
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -150px;
+        height: 150px;
+        width: 35%;
+        background: url(assets/img/bg_rigth_rose.jpg) no-repeat left top;
+    }
+}
 
 .page {
     .block-head-title {
@@ -1310,7 +1398,7 @@ body {
             padding-bottom: 0.6em;
             position: relative;
             margin-bottom: 30px;
-            letter-spacing: 0.035em;
+            letter-spacing: 0.085em;
             &:before {
                 content: '';
                 position: absolute;
@@ -1414,7 +1502,7 @@ body {
         }
         p {
             width: 100%;
-            font-size: 14px;
+            font-size: 16px;
             line-height: 18px;
             color: $gb;
         }
