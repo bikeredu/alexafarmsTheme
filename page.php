@@ -15,7 +15,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header(); ?>
 
-
+<section class="feature-image">
+  <?php echo get_the_post_thumbnail(); ?>
+</section>
 <section class="block-breadcrumb">
   <div class="container"><?php the_breadcrumb(); ?></div>
 </section>

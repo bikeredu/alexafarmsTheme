@@ -948,7 +948,7 @@ body {
         margin-top: 1px;
     }
 }
-.wp-block-image{
+.wp-block-image.border{
     border: 1px solid #ccc;
     position: relative;
     &:before{
@@ -1395,6 +1395,7 @@ body {
 .page {
     .block-head-title {
         width: 100%;
+        padding-top: 20px;
         h1 {
             font-size: 28px;
             text-align: center;
@@ -1402,6 +1403,7 @@ body {
             position: relative;
             margin-bottom: 30px;
             letter-spacing: 0.085em;
+            text-transform: uppercase;
             &:before {
                 content: '';
                 position: absolute;
