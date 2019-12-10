@@ -325,6 +325,7 @@ body.Golden .box-collection .term-name{color:#b0a171}
 .modal .content .btn-close{background:#666 url(assets/img/ic-close.svg) no-repeat center center;padding:15px;border-radius:50%;position:absolute;display:block;right:-25px;top:-25px;height:50px;width:50px;display:block}
 .n2-section-smartslider:before{content:'';position:absolute;left:0;bottom:-150px;height:150px;width:35%;background:url(assets/img/bg_left_rose.jpg) no-repeat right top}
 .n2-section-smartslider:after{content:'';position:absolute;right:0;bottom:-150px;height:150px;width:35%;background:url(assets/img/bg_rigth_rose.jpg) no-repeat left top}
+.page .feature-image{max-height:350px;overflow:hidden;width:100%}
 .page .block-head-title{width:100%;padding-top:20px}
 .page .block-head-title h1{font-size:28px;text-align:center;padding-bottom:.6em;position:relative;margin-bottom:30px;letter-spacing:.085em;text-transform:uppercase}
 .page .block-head-title h1:before{content:'';position:absolute;height:2px;background-color:#006747;width:80px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);bottom:0}
