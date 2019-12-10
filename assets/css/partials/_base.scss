@@ -586,6 +586,8 @@ footer {
     margin-top: 35px;
     h1{
         letter-spacing: .085em;
+        position: relative;
+        padding-bottom: 10px;
         &:before {
             content: '';
             position: absolute;
@@ -665,6 +667,7 @@ body {
                 color: #000000;
                 font-size: 30px;
                 letter-spacing: .085em;
+
                 &:before{
                     background-color: #000000;
                 }

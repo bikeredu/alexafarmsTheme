@@ -84,7 +84,7 @@ html{font-size:62.5%;height:100%;min-height:100%}
 .fa,.fas{font-family:"Font Awesome 5 Free";font-weight:900}
 @font-face{font-family:'Font Awesome 5 Brands';font-style:normal;font-weight:normal;font-display:auto;src:url("assets/fonts/fa-brands-400.eot");src:url("assets/fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),url("assets/fonts/fa-brands-400.woff2") format("woff2"),url("assets/fonts/fa-brands-400.woff") format("woff"),url("assets/fonts/fa-brands-400.ttf") format("truetype"),url("assets/fonts/fa-brands-400.svg#fontawesome") format("svg")}
 .fab{font-family:'Font Awesome 5 Brands'}
-body{font:400 16px/1.4 'Conv_Palatino';color:#006747;margin:0;background:#fff;height:100%;min-height:100%;margin-top:84px}
+body{font:400 16px/1.4 'Conv_Palatino';color:#006747;margin:0;background:#fff;height:100%;min-height:100%;margin-top:115px}
 .clear:before,.clear:after{content:' ';display:table}
 .clearfix{display:block}
 .clear:after{clear:both}
@@ -188,7 +188,7 @@ footer .copyright p{width:100%}
 .search-form .search-field{height:22px;padding:2px 5px;color:#666;font-size:14px;border:1px solid #ccc;width:160px;background:#fff}
 .search-form .search-submit{position:absolute;height:27px;width:27px;overflow:hidden;color:transparent;right:0;top:0}
 .content-collection{margin-top:35px}
-.content-collection h1{letter-spacing:.085em}
+.content-collection h1{letter-spacing:.085em;position:relative;padding-bottom:10px}
 .content-collection h1:before{content:'';position:absolute;height:2px;width:80px;background-color:#006747;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);bottom:0}
 .hero-image{width:100%;height:380px;position:relative;overflow:hidden;font-size:16px}
 .img-parallax{width:100vmax;z-index:1;position:absolute;top:0;left:50%;pointer-events:none;-webkit-transform:translate(-50%,0);transform:translate(-50%,0)}
