@@ -1373,11 +1373,12 @@ body {
 }
 .wpcf7-form{
     .wpcf7-form-control.wpcf7-text{
-        height: 30px;
+        height: 35px;
         border: 1px solid rgba(229,222,201,1);
         padding: 0 8px;
         font-size: 0.8rem;
         margin-bottom: 10px;
+        width: 100%;
     }
     .wpcf7-form-control.wpcf7-textarea{
         border: 1px solid rgba(229,222,201,1);
@@ -1392,6 +1393,14 @@ body {
         color: #fff;
         border-radius: 4px;
         float: right;
+    }
+    .wpcf7-form-control.wpcf7-select{
+        height: 35px;
+        border: 1px solid rgba(229,222,201,1);
+        padding: 0 8px;
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+        width: 100%;
     }
 }
 .n2-section-smartslider{

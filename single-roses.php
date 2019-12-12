@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header(); ?>
 
-<?php $cat = new WPSEO_Primary_Term('collections', get_the_ID()); $termRose = $cat->get_primary_term();?>
+<!-- <?php $cat = new WPSEO_Primary_Term('collections', get_the_ID()); $termRose = $cat->get_primary_term();?>
 <?php $catName = get_term( $termRose, 'collections' );?>
 
 <article class="box-collection">
@@ -33,7 +33,7 @@ get_header(); ?>
 </article>
 <section class="block-breadcrumb">
   <div class="container"><?php the_breadcrumb(); ?></div>
-</section>
+</section> -->
 
 <!-- <section class="hero-image">
   <?php $imageHero = get_field('hero_image', 'category_'.$termRose[0]->term_id); 
@@ -66,7 +66,9 @@ get_header(); ?>
       <figure class="logo">
           <?php $logoRose = get_field('logo');
           if( !empty($logoRose) ): ?><img src="<?php echo $logoRose['url']; ?>" alt="<?php echo $logoRose['alt']; ?>" /> <?php endif; ?>
-          <figcaption><?php echo get_the_content(); ?></figcaption>
+          <figcaption><?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<?php the_content(); ?>
+<?php endwhile; endif; ?></figcaption>
       </figure>
       <dl class="features">
         <?php $color = get_field_object('color'); ?>
