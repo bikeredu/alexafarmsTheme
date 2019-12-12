@@ -1371,6 +1371,29 @@ body {
         }
     }
 }
+.wpcf7-form{
+    .wpcf7-form-control.wpcf7-text{
+        height: 30px;
+        border: 1px solid rgba(229,222,201,1);
+        padding: 0 8px;
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+    .wpcf7-form-control.wpcf7-textarea{
+        border: 1px solid rgba(229,222,201,1);
+        padding: 8px;
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .wpcf7-form-control.wpcf7-submit{
+        background-color: rgba(176,161,113,1);
+        padding: 13px 25px;
+        color: #fff;
+        border-radius: 4px;
+        float: right;
+    }
+}
 .n2-section-smartslider{
     &:before{
         content: '';
@@ -1465,7 +1488,7 @@ body {
             .ab-profile-text{
                 margin-top: 10px;
                 p{
-                    font-size: 0.83rem;
+                    font-size: 1rem;
                 }
             }
         }
