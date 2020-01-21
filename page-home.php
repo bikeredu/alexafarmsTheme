@@ -18,11 +18,13 @@ get_header(); ?>
 <?php
 echo do_shortcode('[smartslider3 slider=2]');
 ?>
-<section class="block-page home"> 
-  <div class="container">
-  <?php the_content(); ?>
-  </div>
-</section>
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    <section class="block-page home"> 
+    <div class="container">
+    <?php the_content(); ?>
+    </div>
+    </section>
+<?php endwhile; endif; ?>
 <?php
 $taxonomies = array( 
     'collections'    
@@ -55,7 +57,6 @@ $termsRoses = get_terms( $taxonomies , $args);
     <div class="container">
         <div class="row">
             <?php foreach ($termsRoses as $term): ?>
-                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <div class="col-6">
                         <a href="<?php get_term_link($term)?>">
                         <?php $logoCollection = get_field('logo_collections', $term); ?>
@@ -65,7 +66,6 @@ $termsRoses = get_terms( $taxonomies , $args);
                         <h3 class="name-collection"><?php echo $term->name;?></h3>
                         </a>
                     </div>
-                <?php endwhile; endif; ?>
             <?php endforeach; ?>
         </div>
         <div class="row">
