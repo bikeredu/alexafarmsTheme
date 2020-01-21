@@ -1441,6 +1441,20 @@ body {
     }
 }
 
+.wpcf7-form {
+    margin-top: 40px;
+    label {
+        color: $gol;
+        .required {
+            color: rgba(255, 0, 0, 1);
+            ;
+        }
+    }
+    h4 {
+        font-size: 1rem;
+    }
+}
+
 .page {
     .feature-image {
         max-height: 350px;
