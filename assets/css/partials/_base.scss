@@ -1450,8 +1450,12 @@ body {
             ;
         }
     }
+    select {
+        color: $gol;
+    }
     h4 {
         font-size: 1rem;
+        color: $gol;
     }
 }
 
