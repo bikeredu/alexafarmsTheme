@@ -1441,6 +1441,11 @@ body {
     }
 }
 
+.width-600 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 .wp-block-image.is-resized {
     display: inline-block;
     text-align: center;
