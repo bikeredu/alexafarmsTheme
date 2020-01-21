@@ -329,6 +329,7 @@ body.Golden .box-collection .term-name{color:#b0a171}
 .wpcf7-form .wpcf7-form-control.wpcf7-select{height:35px;border:1px solid #e5dec9;padding:0 8px;font-size:.8rem;margin-bottom:10px;width:100%}
 .n2-section-smartslider:before{content:'';position:absolute;left:0;bottom:-150px;height:150px;width:35%;background:url(assets/img/bg_left_rose.jpg) no-repeat right top}
 .n2-section-smartslider:after{content:'';position:absolute;right:0;bottom:-150px;height:150px;width:35%;background:url(assets/img/bg_rigth_rose.jpg) no-repeat left top}
+.wp-block-image.is-resized{display:inline-block;text-align:center;vertical-align:middle}
 .wpcf7-form{margin-top:40px}
 .wpcf7-form label{color:#b0a171}
 .wpcf7-form label .required{color:red}

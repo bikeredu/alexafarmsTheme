@@ -1441,6 +1441,12 @@ body {
     }
 }
 
+.wp-block-image.is-resized {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
 .wpcf7-form {
     margin-top: 40px;
     label {
