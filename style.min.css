@@ -200,7 +200,7 @@ p{width:100%;font-size:18px;color:#666}
 body.Purple .block-rose .title-rose{color:#c80065}
 body.Purple .box-collection{background-color:#f5ece9}
 body.Purple .box-collection .term-name{color:#666}
-body.Princess .block-rose .title-rose{color:#006747}
+body.Princess .block-rose .title-rose{color:#000}
 body.Princess .content-collection h1{font-family:'Trajan';color:#000;font-size:30px;letter-spacing:.085em}
 body.Princess .content-collection h1:before{background-color:#000}
 body.Princess .box-collection{background-color:#eedadd}
@@ -357,7 +357,7 @@ body.Golden .box-collection .term-name{color:#b0a171}
 .page .block-page h3{text-align:center;font-size:20px;color:#c80065;margin:35px 0 15px}
 .page .block-page p{width:100%;font-size:16px;line-height:1.5em;color:#4d4b4b}
 .page .block-page p strong{color:#006747}
-.page .block-page a{color:#006747;text-decoration:none}
+.page .block-page a{color:#006747;text-decoration:none;-webkit-box-shadow:none;box-shadow:none}
 .page .block-page .wp-block-column h3{text-align:left;margin:15px 0}
 .page .block-page .wp-block-embed-youtube iframe{width:100%;height:400px}
 .page .block-certifications{padding:1.2% 0}

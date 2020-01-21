@@ -659,7 +659,7 @@ body {
     &.Princess {
         .block-rose {
             .title-rose {
-                color: $color--primary;
+                color: #000000;
             }
         }
         .content-collection {
@@ -1599,6 +1599,7 @@ body {
         a {
             color: $color--primary;
             text-decoration: none;
+            box-shadow: none;
         }
         .wp-block-column {
             h3 {
