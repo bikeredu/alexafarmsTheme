@@ -55,15 +55,17 @@ $termsRoses = get_terms( $taxonomies , $args);
     <div class="container">
         <div class="row">
             <?php foreach ($termsRoses as $term): ?>
-            <div class="col-6">
-                <a href="<?php get_term_link($term)?>">
-                <?php $logoCollection = get_field('logo_collections', $term); ?>
-                <?php $featureImage = get_field('feature_image', $term); ?>
-                <img class="feature-image" src="<?php echo $featureImage['url']; ?>" alt="<?php echo $featureImage['alt']; ?>" />
-                <img class="logo" src="<?php echo $logoCollection['url']; ?>" alt="<?php echo $logoCollection['alt']; ?>" />
-                <h3 class="name-collection"><?php echo $term->name;?></h3>
-                </a>
-            </div>
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                    <div class="col-6">
+                        <a href="<?php get_term_link($term)?>">
+                        <?php $logoCollection = get_field('logo_collections', $term); ?>
+                        <?php $featureImage = get_field('feature_image', $term); ?>
+                        <img class="feature-image" src="<?php echo $featureImage['url']; ?>" alt="<?php echo $featureImage['alt']; ?>" />
+                        <img class="logo" src="<?php echo $logoCollection['url']; ?>" alt="<?php echo $logoCollection['alt']; ?>" />
+                        <h3 class="name-collection"><?php echo $term->name;?></h3>
+                        </a>
+                    </div>
+                <?php endwhile; endif; ?>
             <?php endforeach; ?>
         </div>
         <div class="row">
