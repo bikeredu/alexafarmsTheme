@@ -16,9 +16,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header(); ?>
 
 <?php
-$post_roses = new WP_Query(array(
+$post_blog = new WP_Query(array(
     'post_type' => 'post',
-    'category_name' => 'blog'
+    'category_name' => 'blog',
     'numberposts' => -1,
     'post_status' => 'publish',
     'orderby' => 'name', 
@@ -29,11 +29,11 @@ $post_roses = new WP_Query(array(
 <section class="blog-posts">
   <div class="container">
     <div class="row">
-      <?php while ( $post_roses->have_posts() ) : $post_roses->the_post(); ?>
+      <?php while ( $post_blog->have_posts() ) : $post_blog->the_post(); ?>
           <div class="col-12">
             <div class="block-post">
               <figure>
-                <?php echo get_the_post_thumbnail( $_post->ID, 'large' );?>
+                <?php the_post_thumbnail('large');?>
               </figure>
               <article class="content-post">
                 <span><?php the_date() ?></span>  
