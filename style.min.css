@@ -174,7 +174,7 @@ footer .copyright p{width:100%}
 .box-collection .logo-collection .term-name{font-size:26px;color:#006747;padding:7px 0;display:block;letter-spacing:.035em}
 .details{color:#4d4b4b}
 .details .logo{margin:0 0 25px 0;display:block}
-.details .logo img{max-height:inherit;width:90%;margin:0 auto;display:block}
+.details .logo img{max-height:inherit;width:90%;margin:0 auto;display:block;max-width:320px}
 .details .logo figcaption{font-size:16px;margin-top:25px}
 .details .features{display:block;font-size:16px}
 .details .features dt{color:#701d45;display:inline-block}
