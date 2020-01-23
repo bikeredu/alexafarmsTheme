@@ -136,6 +136,8 @@ header .container{width:100%}
 .logo img{max-height:65px}
 .title-event{position:absolute;left:62%;-webkit-transform:translateX(-50%);transform:translateX(-50%);top:41px;font-size:13px;width:60%}
 .title-event span{color:#c80065}
+.border-golden{position:relative}
+.border-golden:before{content:'';position:absolute;right:-10%;height:100%;width:1px;background-color:#b0a171}
 .menu-mobile{background:#c80065;height:27px;width:27px;position:absolute;right:15px}
 .menu-mobile span{display:block;height:3px;width:80%;margin:4px 10%;background:#fff;border-radius:20px;-webkit-transition:.3s;transition:.3s}
 .menu-mobile.open span:first-child{display:none}

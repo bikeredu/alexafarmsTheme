@@ -116,6 +116,18 @@ header {
     }
 }
 
+.border-golden {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        right: -10%;
+        height: 100%;
+        width: 1px;
+        background-color: $gol;
+    }
+}
+
 .menu-mobile {
     background: $pin;
     height: 27px;
