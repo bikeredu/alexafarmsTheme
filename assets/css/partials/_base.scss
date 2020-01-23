@@ -121,8 +121,8 @@ header {
     &:before {
         content: '';
         position: absolute;
-        right: -10%;
-        height: 100%;
+        right: -5%;
+        height: 115%;
         width: 1px;
         background-color: $gol;
     }
@@ -461,6 +461,12 @@ footer {
     .logo {
         margin: 0 0 25px 0;
         display: block;
+        img {
+            max-height: inherit;
+            width: 90%;
+            margin: 0 auto;
+            display: block;
+        }
         figcaption {
             font-size: 16px;
             margin-top: 25px;

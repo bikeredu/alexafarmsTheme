@@ -137,7 +137,7 @@ header .container{width:100%}
 .title-event{position:absolute;left:62%;-webkit-transform:translateX(-50%);transform:translateX(-50%);top:41px;font-size:13px;width:60%}
 .title-event span{color:#c80065}
 .border-golden{position:relative}
-.border-golden:before{content:'';position:absolute;right:-10%;height:100%;width:1px;background-color:#b0a171}
+.border-golden:before{content:'';position:absolute;right:-5%;height:115%;width:1px;background-color:#b0a171}
 .menu-mobile{background:#c80065;height:27px;width:27px;position:absolute;right:15px}
 .menu-mobile span{display:block;height:3px;width:80%;margin:4px 10%;background:#fff;border-radius:20px;-webkit-transition:.3s;transition:.3s}
 .menu-mobile.open span:first-child{display:none}
@@ -174,6 +174,7 @@ footer .copyright p{width:100%}
 .box-collection .logo-collection .term-name{font-size:26px;color:#006747;padding:7px 0;display:block;letter-spacing:.035em}
 .details{color:#4d4b4b}
 .details .logo{margin:0 0 25px 0;display:block}
+.details .logo img{max-height:inherit;width:90%;margin:0 auto;display:block}
 .details .logo figcaption{font-size:16px;margin-top:25px}
 .details .features{display:block;font-size:16px}
 .details .features dt{color:#701d45;display:inline-block}
