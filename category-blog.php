@@ -18,6 +18,7 @@ get_header(); ?>
 <?php
 $post_roses = new WP_Query(array(
     'post_type' => 'post',
+    'category_name' => 'blog'
     'numberposts' => -1,
     'post_status' => 'publish',
     'orderby' => 'name', 
