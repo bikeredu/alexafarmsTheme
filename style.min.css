@@ -172,6 +172,13 @@ footer .copyright p{width:100%}
 .box-collection+.block-breadcrumb{padding-top:57px}
 .box-collection .logo-collection img{max-height:50px;width:auto}
 .box-collection .logo-collection .term-name{font-size:26px;color:#006747;padding:7px 0;display:block;letter-spacing:.035em}
+.block-post{border:1px solid #b0a171;display:-webkit-box;display:-ms-flexbox;display:flex;margin-bottom:25px}
+.block-post figure{margin:0;min-width:40%}
+.block-post figure img{max-height:300px;width:auto}
+.block-post .content-post{padding:15px 20px}
+.block-post .content-post span{margin-bottom:15px;display:block}
+.block-post .content-post .title-rose{margin-bottom:15px;font-size:1.7rem}
+.block-post .content-post p{font-size:1rem}
 .insta-gallery-feed .insta-gallery-item{opacity:1 !important}
 .insta-gallery-feed .insta-gallery-list .insta-gallery-item .insta-gallery-icon{opacity:1}
 .insta-gallery-feed .insta-gallery-list .insta-gallery-item .insta-gallery-image{opacity:1}
