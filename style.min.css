@@ -473,6 +473,7 @@ footer .footer-menu:first-child,footer .footer-menu:nth-child(2){border-right:1p
 .menu-principal-container .menu{margin:65px 0 0 45px;position:relative}
 .menu-principal-container .menu li{float:left;margin:0 10px;position:relative}
 .menu-principal-container .menu li:nth-last-child(-n+2) .sub-menu{right:0}
+.menu-principal-container .menu li:nth-last-child(-n+1){max-width:600px;width:auto;min-width:300px}
 .menu-principal-container .menu li a{color:#006747;font-size:1rem;padding:0 8px;-webkit-transition:.3s;transition:.3s;font-weight:normal}
 .menu-principal-container .menu li a:hover,.menu-principal-container .menu li a:focus{color:#b0a171;text-decoration:none}
 .menu-principal-container .menu li:hover .sub-menu{opacity:1;visibility:visible;margin-top:-2px}
