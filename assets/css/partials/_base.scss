@@ -456,6 +456,34 @@ footer {
     }
 }
 
+.block-post {
+    border: 1px solid $gol;
+    display: flex;
+    margin-bottom: 25px;
+    figure {
+        margin: 0;
+        min-width: 40%;
+        img {
+            max-height: 300px;
+            width: auto;
+        }
+    }
+    .content-post {
+        padding: 15px 20px;
+        span {
+            margin-bottom: 15px;
+            display: block;
+        }
+        .title-rose {
+            margin-bottom: 15px;
+            font-size: 1.7rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
 .insta-gallery-feed {
     .insta-gallery-item {
         opacity: 1 !important;
