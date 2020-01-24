@@ -286,9 +286,7 @@ header {
                         width: 400px;
                     }
                     @include r(1140) {
-                        max-width: 600px;
-                        width: auto;
-                        min-width: 300px;
+                        width: 600px;
                     }
                     li {
                         margin: 5px;
