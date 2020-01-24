@@ -12,7 +12,7 @@ $(document).ready(function() {
         $('.menu-principal-container').toggleClass('open');
     });
 
-    
+
 
 
 
@@ -130,48 +130,49 @@ $(document).ready(function() {
 
 
     //Parallax
+    if ($('.hero-image')) {
+        $('.hero-image .img-parallax').each(function() {
 
-    $('.hero-image .img-parallax').each(function() {
+            var img = $(this);
+            var imgParent = $(this).parent();
 
-        var img = $(this);
-        var imgParent = $(this).parent();
+            function parallaxImg() {
 
-        function parallaxImg() {
-
-            var speed = img.data('speed');
-            var imgY = imgParent.offset().top;
-            var winY = $(document).scrollTop();
-            var winH = $(document).height();
-            var parentH = imgParent.innerHeight();
+                var speed = img.data('speed');
+                var imgY = imgParent.offset().top;
+                var winY = $(document).scrollTop();
+                var winH = $(document).height();
+                var parentH = imgParent.innerHeight();
 
 
-            // The next pixel to show on screen      
-            var winBottom = winY + winH;
+                // The next pixel to show on screen      
+                var winBottom = winY + winH;
 
-            console.log(winBottom);
+                console.log(winBottom);
 
-            // If block is shown on screen
-            if (winBottom > imgY && winY < imgY + parentH) {
-                // Number of pixels shown after block appear
-                var imgBottom = ((winBottom - imgY) * speed);
-                // Max number of pixels until block disappear
-                var imgTop = winH + parentH;
-                // Porcentage between start showing until disappearing
-                var imgPercent = ((imgBottom / imgTop) * 100) + (50 - (speed * 50));
+                // If block is shown on screen
+                if (winBottom > imgY && winY < imgY + parentH) {
+                    // Number of pixels shown after block appear
+                    var imgBottom = ((winBottom - imgY) * speed);
+                    // Max number of pixels until block disappear
+                    var imgTop = winH + parentH;
+                    // Porcentage between start showing until disappearing
+                    var imgPercent = ((imgBottom / imgTop) * 100) + (50 - (speed * 50));
+                }
+                img.css({
+                    top: imgPercent + '%',
+                    transform: 'translate(-50%, -' + imgPercent + '%)'
+                });
             }
-            img.css({
-                top: imgPercent + '%',
-                transform: 'translate(-50%, -' + imgPercent + '%)'
+            $(document).on({
+                scroll: function() {
+                    parallaxImg();
+                },
+                ready: function() {
+                    parallaxImg();
+                }
             });
-        }
-        $(document).on({
-            scroll: function() {
-                parallaxImg();
-            },
-            ready: function() {
-                parallaxImg();
-            }
         });
-    });
+    }
 
 });
