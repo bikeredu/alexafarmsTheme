@@ -172,7 +172,7 @@ footer .copyright p{width:100%}
 .box-collection+.block-breadcrumb{padding-top:57px}
 .box-collection .logo-collection img{max-height:50px;width:auto}
 .box-collection .logo-collection .term-name{font-size:26px;color:#006747;padding:7px 0;display:block;letter-spacing:.035em}
-.insta-gallery-feed .insta-gallery-item{opacity:1}
+.insta-gallery-feed .insta-gallery-item{opacity:1 !important}
 .insta-gallery-feed .insta-gallery-list .insta-gallery-item .insta-gallery-icon{opacity:1}
 .insta-gallery-feed .insta-gallery-list .insta-gallery-item .insta-gallery-image{opacity:1}
 .details{color:#4d4b4b}
