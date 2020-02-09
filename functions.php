@@ -409,7 +409,6 @@ function get_post_primary_category($post_id, $term='category', $return_all_categ
 	return $return;
 }  
 
-
 function my_load_scripts() {
     wp_enqueue_script( 'my_js', get_theme_file_uri( 'assets/js/ajax-posts.js' ), array( 'jquery' ) );
  
