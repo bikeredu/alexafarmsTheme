@@ -97,8 +97,6 @@ get_header(); ?>
         </dd><br> 
         
         <?php endif; ?>
-
-				<br>
 			</dl>
       <?php if( have_rows('pantones') ): ?>
         <?php  $textPantones = get_field_object('pantones');?>
@@ -106,8 +104,8 @@ get_header(); ?>
         <ul class="pantones">
           <?php while( have_rows('pantones') ): the_row();?>
             <li>
-              <p><?php the_sub_field('name_pantone') ?></p>
               <div class="color-pantone" style="background-color:<?php the_sub_field('color_pantone'); ?>"></div>
+              <p><?php the_sub_field('name_pantone') ?></p>
             </li>
           <?php endwhile; ?>
         </ul>
