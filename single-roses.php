@@ -101,8 +101,8 @@ get_header(); ?>
 				<br>
 			</dl>
       <?php if( have_rows('pantones') ): ?>
-        <?php  $textPantones = get_field('pantones');?>
-        <p class="title-pantone"><?php echo esc_attr( $textPantones['name'] ); ?></p>
+        <?php  $textPantones = get_field_object('pantones');?>
+        <p class="title-pantone"><?php echo esc_attr( $textPantones['label'] ); ?></p>
         <ul class="pantones">
           <?php while( have_rows('pantones') ): the_row();?>
             <li>
