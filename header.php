@@ -22,6 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php wp_head(); ?>
 </head>
+<?php show_admin_bar( true ); ?>
 <header>
     <div class="container">
     <?php 
