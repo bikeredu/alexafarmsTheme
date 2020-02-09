@@ -15,25 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header(); ?>
 
-<!-- <?php $cat = new WPSEO_Primary_Term('collections', get_the_ID()); $termRose = $cat->get_primary_term();?>
-<?php $catName = get_term( $termRose, 'collections' );?>
 
-<article class="box-collection">
-	<div class="container">
-		<div class="row">
-			<div class="logo-collection">
-        <?php 
-        $logoCollection = get_field('logo_collections', 'category_'.$termRose); 
-        if( !empty($logoCollection) ){ ?><img src="<?php echo $logoCollection['url']; ?>" alt="<?php echo $logoCollection['alt']; ?>" /> <?php } else {?>  
-        <span class="term-name"><?php echo $catName->name; ?></span>
-        <?php } ?>
-			</div>
-		</div>
-	</div>
-</article>
-<section class="block-breadcrumb">
-  <div class="container"><?php the_breadcrumb(); ?></div>
-</section> -->
 
 <!-- <section class="hero-image">
   <?php $imageHero = get_field('hero_image', 'category_'.$termRose[0]->term_id); 
@@ -127,6 +109,16 @@ get_header(); ?>
     </div>
   </div>
   <?php } ?>
+  
+  <?php if (get_field('image_point')){
+  $imgCut = get_field('image_point');
+  ?>
+  <div class="row">
+    <div class="col image-point ">
+      <?php if( !empty($imgCut) ): ?><img src="<?php echo $imgCut['url']; ?>" alt="<?php echo $imgCut['alt']; ?>" /> <?php endif; ?>
+    </div>
+  </div>
+  <?php } ?>
 </div>
 
 
@@ -163,4 +155,3 @@ get_header(); ?>
   </script>
 
 <?php get_footer(); ?>
-
