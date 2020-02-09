@@ -47,7 +47,7 @@ get_header(); ?>
     <div class="col-5 details">
       <figure class="logo">
           <?php $logoRose = get_field('logo');
-          if( !empty($logoRose) ): ?><h1><img src="<?php echo $logoRose['url']; ?>" alt="<?php echo $logoRose['alt']; ?>" /></h1> <?php endif; ?>
+          if( !empty($logoRose) ): ?><img src="<?php echo $logoRose['url']; ?>" alt="<?php echo $logoRose['alt']; ?>" /> <?php endif; ?>
           <figcaption><?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <?php the_content(); ?>
 <?php endwhile; endif; ?></figcaption>
@@ -97,20 +97,9 @@ get_header(); ?>
         </dd><br> 
         
         <?php endif; ?>
-			</dl>
-      <?php if( have_rows('pantones') ): ?>
-        <?php  $textPantones = get_field_object('pantones');?>
-        <p class="title-pantone"><?php echo esc_attr( $textPantones['label'] ); ?></p>
-        <ul class="pantones">
-          <?php while( have_rows('pantones') ): the_row();?>
-            <li>
-              <div class="color-pantone" style="background-color:<?php the_sub_field('color_pantone'); ?>"></div>
-              <p><?php the_sub_field('name_pantone') ?></p>
-            </li>
-          <?php endwhile; ?>
-        </ul>
-      <?php endif; ?>
 
+				<br>
+			</dl>
     </div>
   </div>
   <?php if (get_field('url_video')){?>
@@ -166,3 +155,4 @@ get_header(); ?>
   </script>
 
 <?php get_footer(); ?>
+
