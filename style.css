@@ -415,7 +415,7 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 
 @media (min-width: 1280px) { .content h1 { text-transform: uppercase; } }
 
-header { position: fixed; width: 100%; z-index: 500; top: 0; padding: 10px 0; background-color: white; }
+header { position: fixed; width: 100%; z-index: 600; top: 0; padding: 10px 0; background-color: white; }
 
 header .container { width: 100%; }
 

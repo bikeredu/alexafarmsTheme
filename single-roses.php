@@ -118,6 +118,16 @@ get_header(); ?>
 
 				<br>
 			</dl>
+      <?php if( have_rows('pantones') ): ?>
+        <ul class="pantones">
+          <?php while( have_rows('pantones') ): the_row();?>
+            <li>
+              <p><?php get_sub_field('name_pantone') ?></p>
+              <div class="color-pantone" style="background-color:<?php get_sub_field('color_pantone'); ?>"></div>
+            </li>
+          <?php endwhile; ?>
+        </ul>
+      <?php endif; ?>
     </div>
   </div>
   <?php if (get_field('url_video')){?>
