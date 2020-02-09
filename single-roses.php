@@ -47,7 +47,7 @@ get_header(); ?>
     <div class="col-5 details">
       <figure class="logo">
           <?php $logoRose = get_field('logo');
-          if( !empty($logoRose) ): ?><img src="<?php echo $logoRose['url']; ?>" alt="<?php echo $logoRose['alt']; ?>" /> <?php endif; ?>
+          if( !empty($logoRose) ): ?><h1><img src="<?php echo $logoRose['url']; ?>" alt="<?php echo $logoRose['alt']; ?>" /></h1> <?php endif; ?>
           <figcaption><?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <?php the_content(); ?>
 <?php endwhile; endif; ?></figcaption>
@@ -101,6 +101,8 @@ get_header(); ?>
 				<br>
 			</dl>
       <?php if( have_rows('pantones') ): ?>
+        <?php  $textPantones = get_field('pantones');?>
+        <p class="title-pantone"><?php echo esc_attr( $textPantones['title'] ); ?></p>
         <ul class="pantones">
           <?php while( have_rows('pantones') ): the_row();?>
             <li>
